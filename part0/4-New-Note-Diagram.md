@@ -10,7 +10,8 @@ sequenceDiagram;
     activate server;
     server-->>browser: status code 302(URL redirect)
     deactivate server;
-    Note right of browser: The browser sends html document with the form data to the server; Server responds with status code 302, asks the browser to do a new HTTP GET request to the address defined in the header's Location (/notes).
+    Note right of browser: The browser sends html document with the form data to the server. 
+    Note right of browser: Server responds with status code 302, asks the browser to do a new HTTP GET request to the address defined in the header's Location (/notes).
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes;
     activate server;
