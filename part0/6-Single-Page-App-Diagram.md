@@ -15,7 +15,7 @@ sequenceDiagram;
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa;
     activate server;
-    browser-->>server: Key Value pair of the new input
+    browser-->>server: Key Value pair of the new input, {"message":"note created"};
     deactivate server; 
     
 
